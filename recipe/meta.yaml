@@ -21,7 +21,7 @@ requirements:
   run:
     - python >=3.7
     - fps >=0.0.8,<1
-    - fps-lab <1
+    - fps-lab >=0.0.37,<1
     - retrolab <1
 
 test:
