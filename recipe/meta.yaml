@@ -1,5 +1,5 @@
 {% set name = "fps-retrolab" %}
-{% set version = "0.0.40" %}
+{% set version = "0.0.41" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/fps_retrolab-{{ version }}.tar.gz
-  sha256: 868a7e31b9a380a3326a08263be31ad3420f2b02bcc186ddc41fab6097e3eba7
+  sha256: ef22ddcd2eb4d9720e235940446e61c127dfac28201f41aabe8fc01becd057bc
 
 build:
   noarch: python
@@ -23,6 +23,7 @@ requirements:
     - python >=3.7
     - fps >=0.0.8,<1
     - fps-lab >=0.0.37,<1
+    - fps-frontend <1
     - retrolab <1
 
 test:
