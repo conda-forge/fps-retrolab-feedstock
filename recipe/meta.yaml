@@ -1,5 +1,5 @@
 {% set name = "fps-retrolab" %}
-{% set version = "0.0.49" %}
+{% set version = "0.0.50" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/fps_retrolab-{{ version }}.tar.gz
-  sha256: 60403439e4eca8ab8603ba2f627e1869afabd1e6b5814abb08e6191f91a403a1
+  sha256: 29ea6ed5c730a6d1e170292e8bc42cfc6a4844eea95f00e5f1795d1824abfa26
 
 build:
   noarch: python
