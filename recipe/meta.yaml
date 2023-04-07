@@ -21,11 +21,8 @@ requirements:
     - hatchling
   run:
     - python >=3.8
-    - fps >=0.0.8,<1
-    - fps-auth-base <1
-    - fps-lab >=0.0.37,<1
-    - fps-frontend <1
-    - retrolab <1
+    - jupyverse-api >=0.1.2,<1
+    - retrolab
 
 test:
   imports:
@@ -34,7 +31,7 @@ test:
 about:
   home: https://github.com/jupyter-server/jupyverse/tree/main/plugins/retrolab
   summary: An FPS plugin for the RetroLab API
-  keywords: jupyter, server, fastapi, pluggy, plugins
+  keywords: jupyter, server, fastapi, plugins
   dev_url: https://github.com/jupyter-server/jupyverse/tree/main/plugins/retrolab
   license_file: COPYING.md
   license: BSD-3-Clause
