@@ -6,25 +6,27 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/fps_retrolab-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/fps_retrolab-{{ version }}.tar.gz
   sha256: ef2c47ce1c1c18557cf566bfd746b77c40e62955aa6d93e629282de7c42f0aa5
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
     - hatchling
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - jupyverse-api >=0.1.4,<1
     - retrolab
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - fps_retrolab
 
